@@ -39,8 +39,8 @@ function playTimer(){
     
     function timer(){ //main timer function
         
-        var minutes_interval = setInterval(minutesTimer, 6000);
-        var seconds_interval = setInterval(secondsTimer, 100);
+        var minutes_interval = setInterval(minutesTimer, 60000);
+        var seconds_interval = setInterval(secondsTimer, 1000);
 
         function minutesTimer(){
             minutes = minutes - 1;
@@ -87,8 +87,8 @@ function playTimer(){
 
         function timerBreak(){
 
-            var minutes_interval = setInterval(minutesBreakTimer, 6001);
-            var seconds_interval = setInterval(secondsBreakTimer, 100);
+            var minutes_interval = setInterval(minutesBreakTimer, 60001);
+            var seconds_interval = setInterval(secondsBreakTimer, 1000);
 
             function minutesBreakTimer(){
                 minutes = minutes - 1;
